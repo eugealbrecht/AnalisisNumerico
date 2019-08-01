@@ -1,0 +1,11 @@
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Biseccion.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormPrincipal.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
