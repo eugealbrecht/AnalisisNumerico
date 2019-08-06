@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Biseccion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReglaFalsa.cs" />
     <Compile Include="Salida.cs" />
   </ItemGroup>
   <ItemGroup>
