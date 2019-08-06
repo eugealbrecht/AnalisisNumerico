@@ -11,5 +11,8 @@ namespace TP1
         public int NroIteraciones { get; set; }
         public float ErrorRelativo { get; set; }
         public string MejorSolucion { get; set; }
+
+
+        
     }
 }
