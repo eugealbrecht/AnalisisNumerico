@@ -119,9 +119,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(12, 200);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 13);
+            this.label6.Size = new System.Drawing.Size(114, 13);
             this.label6.TabIndex = 8;
-            this.label6.Text = "TOLERANCIA: 0,00001";
+            this.label6.Text = "TOLERANCIA: 0,0001";
             // 
             // button1
             // 

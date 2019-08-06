@@ -143,6 +143,7 @@
             this.métodoDeLaReglaFalsaToolStripMenuItem.Name = "métodoDeLaReglaFalsaToolStripMenuItem";
             this.métodoDeLaReglaFalsaToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
             this.métodoDeLaReglaFalsaToolStripMenuItem.Text = "Método de la Regla Falsa";
+            this.métodoDeLaReglaFalsaToolStripMenuItem.Click += new System.EventHandler(this.métodoDeLaReglaFalsaToolStripMenuItem_Click);
             // 
             // métodoNewtonRaphsonToolStripMenuItem
             // 
@@ -189,7 +190,7 @@
             this.uNIDAD3ToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.uNIDAD3ToolStripMenuItem.Text = "UNIDAD 3";
             // 
-            // Form1
+            // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,7 +198,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FormPrincipal";
             this.Text = "Form1";
             this.contextMenuStrip3.ResumeLayout(false);
             this.contextMenuStrip4.ResumeLayout(false);

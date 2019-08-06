@@ -9,3 +9,15 @@ C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\W
 C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\AnalisisNumerico\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\AnalisisNumerico\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\AnalisisNumerico\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormBiseccion.resources
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormPrincipal.resources
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormReglaFalsa.resources
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

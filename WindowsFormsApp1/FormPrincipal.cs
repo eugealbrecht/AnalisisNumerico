@@ -23,5 +23,12 @@ namespace WindowsFormsApp1
             form.Owner = this;
             form.ShowDialog();
         }
+
+        private void métodoDeLaReglaFalsaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormReglaFalsa form = new FormReglaFalsa();
+            form.Owner = this;
+            form.ShowDialog();
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FormBiseccion : Form
+    public partial class FormReglaFalsa : Form
     {
-        public FormBiseccion()
+        public FormReglaFalsa()
         {
             InitializeComponent();
             label11.Visible = false;
@@ -28,9 +28,12 @@ namespace WindowsFormsApp1
             label5.Visible = true;
             label6.Visible = true;
             label7.Visible = false;
-            textBox1.Visible = true;
-            textBox2.Visible = true;
-            textBox3.Visible = true;
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,12 +54,6 @@ namespace WindowsFormsApp1
             textBox1.Visible = false;
             textBox2.Visible = false;
             textBox3.Visible = false;
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
