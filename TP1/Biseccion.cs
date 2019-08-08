@@ -8,65 +8,58 @@ namespace TP1
 {
     public class Biseccion
     {
-        public string Funcion { get; set; }
-        public int Iteraciones = 100;
-        public double Tolerancia = 0.0001;
-        public float LimiteIzquierdo { get; set; }
-        public float LimiteDerecho { get; set; }
-        public int Contador { get; set; }
-        public int Xr { get; set; }
-        public float Error { get; set; }
-        public float Xant { get; set; }
-
-
-        public Salida RetornarValores(string funcion,  int extremoderecho, int extremoizquierdo)
+        public static double f(double x)
         {
-            string mensaje = "";
-            if (funcion != "")
+            return -(x * x) - (2 * x) + 1;
+        }
+        static void Main(string[] args)
+        {
+
+            double extremoderecho = 0, extremoizquierdo = 0, xr = 0;
+            Console.WriteLine("Ingrese extremo derecho");
+            string d = Console.ReadLine();
+            extremoderecho = double.Parse(d);
+
+            Console.WriteLine("Ingrese extremo izquierdo");
+            string i = Console.ReadLine();
+            extremoizquierdo = double.Parse(i);
+
+            
+            if (f(extremoderecho) * f(extremoizquierdo) > 0)
             {
-                if (funcion[extremoderecho] * funcion[extremoizquierdo] == 0)
+                Console.WriteLine("No se cumple que f(extremoderecho)*f(extremoizquierdo)<0");
+                Console.ReadKey();
+                return;
+            }
+            while (1 > 0)
+            {
+                int contador = 0;
+                double Xant = 0;
+                double Error;
+                int Iteraciones = 100;
+                double Tolerancia = 0.0001;
+                xr = (extremoderecho + extremoizquierdo) / 2;
+                contador = contador + 1;
+                Error = ((xr - Xant) / Xant);
+                if (Math.Abs(f(xr)) < Tolerancia | contador > Iteraciones | Error < Tolerancia)
                 {
-                    if (funcion[extremoizquierdo] == 0)
-                    {
-                        mensaje = "Extremo izquierdo es la raiz";
-                        return mensaje;
-                        
-                    }
-                    else
-                    {
-                        mensaje = "Extremo derecho es la raiz";
-                        return mensaje;
-                    }
+                    Console.WriteLine("La raiz aproximada es r= " + xr);
+                    Console.WriteLine("El valor de f en r= " + f(xr));
+                    Console.WriteLine("El error relativo es= " +Error);
+                    Console.WriteLine("La cantidad de iteraciones que se realizaron fueron= " +contador);
+                    Console.ReadKey();
+                    return;
                 }
-                else if (funcion[extremoderecho] * funcion[extremoizquierdo] < 0)
+                if (f(extremoderecho) * f(extremoizquierdo) < 0)
                 {
-                    int contador = 0;
-                    int Xant = 0;
-                    Xr = ((extremoderecho + extremoizquierdo) / 2);
-                    contador = contador + 1;
-                    Error = ((Xr - Xant) / Xant); //ACA IRIA EL ABS
-                    if ((funcion[Xr] < Tolerancia) || contador > Iteraciones || Error < Tolerancia)// ACA IRIA EL ABS
-                    {
-                        mensaje = "Xr es la Raiz";
-                        return mensaje;
-                    }
-                    else if (funcion[extremoizquierdo] *funcion[Xr]<0)
-                    {
-                        extremoderecho = Xr;
-                    }
-                    else
-                    {
-                        extremoizquierdo = Xr;
-                    }
-                    Xant = Xr;
-                    //ACA SE VOLVERIA A SACAR XR
+                    extremoizquierdo = xr;
                 }
-                else if (funcion[extremoderecho] * funcion[extremoizquierdo] > 0)
+                else
                 {
-                    break; //ACA SE TENDRIA QUE VOLVER A PEDIR LOS EXTREMOS
+                    extremoderecho = xr;
                 }
+                Xant = xr;
             }
         }
-
     }
 }
