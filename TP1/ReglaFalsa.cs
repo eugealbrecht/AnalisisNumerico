@@ -10,54 +10,76 @@ namespace TP1
     {
         public static double f(double x)
         {
-            return -(x * x) - (2 * x) + 1;
+            double e = 2.71828;
+            return ((x * x * x * x * x - 1) * (e * x) - 10);
         }
         static void Main(string[] args)
         {
 
             double extremoderecho = 0, extremoizquierdo = 0, xr = 0;
-            Console.WriteLine("Ingrese extremo derecho");
-            string d = Console.ReadLine();
-            extremoderecho = double.Parse(d);
 
             Console.WriteLine("Ingrese extremo izquierdo");
             string i = Console.ReadLine();
             extremoizquierdo = double.Parse(i);
 
-            int contador = 0;
-            double Xant = 0;
-            double Error;
-            int Iteraciones = 100;
-            double Tolerancia = 0.0001;
-            if (f(extremoderecho) * f(extremoizquierdo) > 0)
+            Console.WriteLine("Ingrese extremo derecho");
+            string d = Console.ReadLine();
+            extremoderecho = double.Parse(d);
+
+
+            if (f(extremoizquierdo) * f(extremoderecho) > 0)
             {
-                Console.WriteLine("No se cumple que f(extremoderecho)*f(extremoizquierdo)<0");
+                Console.WriteLine("No se cumple que f(extremoderecho)*f(extremoizquierdo) < 0");
                 Console.ReadKey();
                 return;
             }
-            while (1 > 0)
+            else if (f(extremoizquierdo) * f(extremoderecho) == 0)
             {
-                xr = (((f(extremoizquierdo) * extremoderecho) - (f(extremoderecho) * extremoizquierdo)) / (f(extremoizquierdo) * f(extremoderecho)));
-                contador = contador + 1;
-                Error = ((xr - Xant) / Xant);
-                if (Math.Abs(f(xr)) < Tolerancia | contador > Iteraciones | Error < Tolerancia)
+                if (f(extremoizquierdo) == 0)
                 {
-                    Console.WriteLine("La raiz aproximada es r= " + xr);
-                    Console.WriteLine("El valor de f en r= " + f(xr));
-                    Console.WriteLine("El error relativo es= ", Error);
-                    Console.WriteLine("La cantidad de iteraciones que se realizaron fueron= ", contador);
+                    Console.WriteLine("El extremo izquierdo es la raiz");
                     Console.ReadKey();
                     return;
                 }
-                if (f(extremoderecho) * f(extremoizquierdo) < 0)
+                else if (f(extremoderecho) == 0)
                 {
-                    extremoizquierdo = xr;
+                    Console.WriteLine("El extremo derecho es la raiz");
+                    Console.ReadKey();
+                    return;
                 }
-                else
+            }
+            else
+            {
+                int contador = 0;
+                double Xant = 0;
+                double Error = 0;
+                int Iteraciones = 100;
+                double Tolerancia = 0.0001;
+                do
                 {
-                    extremoderecho = xr;
-                }
-                Xant = xr;
+                    xr = (f(extremoizquierdo) * extremoderecho - f(extremoderecho) * extremoizquierdo) / (f(extremoizquierdo) * f(extremoderecho));
+                    contador = contador + 1;
+                    Error = Math.Abs((xr - Xant) / xr);
+
+                    if (Math.Abs(f(xr)) < Tolerancia | contador > Iteraciones | Error < Tolerancia)
+                    {
+                        Console.WriteLine("La raiz aproximada es r= " + xr);
+                        Console.WriteLine("El valor de f en r= " + f(xr));
+                        Console.WriteLine("El error relativo es= " + Error);
+                        Console.WriteLine("La cantidad de iteraciones que se realizaron fueron= " + contador);
+                        Console.ReadKey();
+                        return;
+                    }
+                    else if (f(extremoizquierdo) * f(extremoderecho) < 0)
+                    {
+                        extremoizquierdo = xr;
+                    }
+                    else
+                    {
+                        extremoderecho = xr;
+                    }
+                    Xant = xr;
+                } while (Error > Tolerancia && contador <= Iteraciones);
             }
         }
 
