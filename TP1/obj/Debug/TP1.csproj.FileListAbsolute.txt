@@ -12,3 +12,10 @@ C:\AnalisisNumerico\TP1\obj\Debug\TP1.pdb
 C:\AnalisisNumerico\TP1\bin\Debug\TP1.exe.config
 C:\AnalisisNumerico\TP1\bin\Debug\TP1.exe
 C:\AnalisisNumerico\TP1\bin\Debug\TP1.pdb
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\TP1\bin\Debug\TP1.exe.config
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\TP1\bin\Debug\TP1.exe
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\TP1\bin\Debug\TP1.pdb
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\TP1\obj\Debug\TP1.csprojAssemblyReference.cache
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\TP1\obj\Debug\TP1.csproj.CoreCompileInputs.cache
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\TP1\obj\Debug\TP1.exe
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\TP1\obj\Debug\TP1.pdb

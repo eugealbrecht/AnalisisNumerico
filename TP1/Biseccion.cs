@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-    public class Biseccion
+   public class Biseccion
     {
         public static double f(double x)
         {
