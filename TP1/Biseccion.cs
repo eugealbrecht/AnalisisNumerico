@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-   public class Biseccion
+ /*  public class Biseccion
     {
         public static double f(double x)
         {
@@ -82,5 +82,5 @@ namespace TP1
                 } while (Error > Tolerancia && contador <= Iteraciones);
             }
         }
-    }
+    }*/
 }

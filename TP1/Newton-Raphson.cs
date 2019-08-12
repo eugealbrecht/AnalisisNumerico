@@ -10,7 +10,7 @@ namespace TP1
     {
         public static double f(double x)
         {
-            return (x * x) + (2 * x) + 1;
+            return (x * x);
 
         }
         public static string NewtonRaphson (double xi, double tolerancia)

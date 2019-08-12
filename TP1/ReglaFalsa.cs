@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-   public class ReglaFalsa
+  /* public class ReglaFalsa
     {
         public static double f(double x)
         {
@@ -83,5 +83,5 @@ namespace TP1
             }
         }
 
-    }
+    }*/
 }
