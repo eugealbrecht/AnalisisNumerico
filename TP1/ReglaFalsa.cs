@@ -11,7 +11,7 @@ namespace TP1
         /*public static double f(double x)
         {
             //double e = 2.71828;
-            // return ((Math.Sqrt(Math.Pow(x, 5 - 1) * (Math.Sqrt(Math.Pow(e,x) -10)) ((x * x * x * x * x - 1) * (e * x) - 10);
+            // return ((x * x * x * x * x - 1) * (e * x) - 10);
             return ((12.5 * (x + 2)) / (x*x + 4*x + 5))+2;
             
         }

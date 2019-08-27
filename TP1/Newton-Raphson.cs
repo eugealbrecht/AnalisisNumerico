@@ -10,39 +10,54 @@ namespace TP1
     {
         public static double f(double x)
         {
-            return (x * x);
+            return Math.Log(x) + (1 / x) - 3;
 
         }
-        public static string NewtonRaphson (double xi, double tolerancia)
+
+        public static void NewtonRaphson(double xi)
         {
-            double x = xi;
             double c = 0;
             var itermax = 100;
             double error = 0;
             double derivada;
-            double xr;
+            double xr = 0;
             double xant = 0;
-            while ((f(x) > tolerancia) | (c > itermax) | (error < tolerancia))
+            double tolerancia = 0.0001;
+
+            if (f(xi) == 0)
             {
-                c = c + 1;
-                derivada = ((f(x + tolerancia) - f(x)) / (tolerancia));
-                xr = x - (f(x) / derivada);
-                error = (Math.Abs(xr - xant) / xr);
-                if (f(x) <= tolerancia)
-                {
-                    return x + "   El número de iteraciones realizadas es:" + c;
-
-                }
-
-                xant = x;
-                x = xr;
+                Console.WriteLine("La raíz es: " + xi + " - Cantidad de iteraciones: " + c);
             }
-            return "";
+            else
+            {
+                xant = 0;
+
+                do
+                {
+
+                    derivada = ((f(xi + tolerancia) - f(xi))) / tolerancia;
+                    xr = xi - (f(xi) / derivada);
+                    error = Math.Abs(xr - xant) / xr;
+
+                    c = c + 1;
+                    xi = xr;
+                    xant = xr;
+
+
+                } while ((Math.Abs(f(xr)) > tolerancia) && (c < itermax));
+
+                Console.WriteLine("La raíz es: " + xr + " - Cantidad de iteraciones: " + c);
+
+            }
+
         }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("La raiz aproximada es: " + NewtonRaphson(0, 0.0001));
+            NewtonRaphson(4);
             Console.ReadKey();
+
         }
+
     }
 }
