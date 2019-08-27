@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
- /*  public class Biseccion
+   public class Biseccion
     {
         public static double f(double x)
         {
-            double e = 2.71828;
-            return -((x * x * x * x * x - 1) * (e * x) - 10);
+            /* double e = 2.71828;
+             return -((x * x * x * x * x - 1) * (e * x) - 10);*/
+            //return ((12.5 * (x + 2)) / (x * x + 4 * x + 5)) + 2;
+            return Math.Abs(x * x - 4) + 2 * x;
         }
         static void Main(string[] args)
         {
@@ -82,5 +84,5 @@ namespace TP1
                 } while (Error > Tolerancia && contador <= Iteraciones);
             }
         }
-    }*/
+    }
 }

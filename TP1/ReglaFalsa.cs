@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-  /* public class ReglaFalsa
+    public class ReglaFalsa
     {
-        public static double f(double x)
+        /*public static double f(double x)
         {
-            double e = 2.71828;
-            return ((x * x * x * x * x - 1) * (e * x) - 10);
+            //double e = 2.71828;
+            // return ((Math.Sqrt(Math.Pow(x, 5 - 1) * (Math.Sqrt(Math.Pow(e,x) -10)) ((x * x * x * x * x - 1) * (e * x) - 10);
+            return ((12.5 * (x + 2)) / (x*x + 4*x + 5))+2;
+            
         }
         static void Main(string[] args)
         {
@@ -26,14 +28,15 @@ namespace TP1
             string d = Console.ReadLine();
             extremoderecho = double.Parse(d);
 
-
-            if (f(extremoizquierdo) * f(extremoderecho) > 0)
+            double resultado = 0;
+            resultado = f(extremoizquierdo) * f(extremoderecho);
+            if ( resultado > 0)
             {
                 Console.WriteLine("No se cumple que f(extremoderecho)*f(extremoizquierdo) < 0");
                 Console.ReadKey();
                 return;
             }
-            else if (f(extremoizquierdo) * f(extremoderecho) == 0)
+            if (resultado == 0)
             {
                 if (f(extremoizquierdo) == 0)
                 {
@@ -48,7 +51,7 @@ namespace TP1
                     return;
                 }
             }
-            else
+            if (resultado < 0)
             {
                 int contador = 0;
                 double Xant = 0;
@@ -57,7 +60,7 @@ namespace TP1
                 double Tolerancia = 0.0001;
                 do
                 {
-                    xr = (f(extremoizquierdo) * extremoderecho - f(extremoderecho) * extremoizquierdo) / (f(extremoizquierdo) * f(extremoderecho));
+                    xr = (((f(extremoizquierdo) * extremoderecho) - (f(extremoderecho) * extremoizquierdo))) / (f(extremoizquierdo) - f(extremoderecho));
                     contador = contador + 1;
                     Error = Math.Abs((xr - Xant) / xr);
 
@@ -81,7 +84,7 @@ namespace TP1
                     Xant = xr;
                 } while (Error > Tolerancia && contador <= Iteraciones);
             }
-        }
+        }*/
 
-    }*/
+    }
 }
