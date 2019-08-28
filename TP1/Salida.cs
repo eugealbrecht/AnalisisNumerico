@@ -8,11 +8,11 @@ namespace TP1
 {
     public class Salida
     {
-        public int NroIteraciones { get; set; }
-        public float ErrorRelativo { get; set; }
+        public double NroIteraciones { get; set; }
+        public double ErrorRelativo { get; set; }
         public string MejorSolucion { get; set; }
-
-
+        public double Raiz { get; set; }
+        public string ErrorMsje { get; set; }
         
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-    class Newton_Raphson
+    public class Newton_Raphson
     {
         public static double f(double x)
         {
@@ -14,7 +14,7 @@ namespace TP1
 
         }
 
-        public static void NewtonRaphson(double xi)
+        public Salida NewtonRaphson(double xi)
         {
             double c = 0;
             var itermax = 100;
@@ -24,9 +24,14 @@ namespace TP1
             double xant = 0;
             double tolerancia = 0.0001;
 
+            Salida salida = new Salida();
+
             if (f(xi) == 0)
             {
-                Console.WriteLine("La raíz es: " + xi + " - Cantidad de iteraciones: " + c);
+                salida.ErrorRelativo = 0;
+                salida.Raiz = xi;
+                salida.NroIteraciones = c;
+                
             }
             else
             {
@@ -46,18 +51,16 @@ namespace TP1
 
                 } while ((Math.Abs(f(xr)) > tolerancia) && (c < itermax));
 
-                Console.WriteLine("La raíz es: " + xr + " - Cantidad de iteraciones: " + c);
-
+                salida.Raiz = xr;
+                salida.NroIteraciones = c;
+                salida.ErrorRelativo = error;
+                
             }
 
-        }
-
-        static void Main(string[] args)
-        {
-            NewtonRaphson(4);
-            Console.ReadKey();
+            return salida;
 
         }
 
+      
     }
 }

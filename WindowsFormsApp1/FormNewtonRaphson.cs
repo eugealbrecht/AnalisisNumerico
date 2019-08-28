@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP1;
 
 namespace WindowsFormsApp1
 {
@@ -56,6 +57,22 @@ namespace WindowsFormsApp1
             textBox1.Visible = false;
             textBox2.Visible = false;
             textBox3.Visible = false;
+
+            if (textBox2.Text != "" & textBox3.Text != "")
+            {
+                double xi = Convert.ToDouble(textBox2.Text);
+
+                Newton_Raphson newton = new Newton_Raphson();
+                Salida salida = new Salida();
+
+                salida = newton.NewtonRaphson(xi);
+
+                label1.Text = Convert.ToString(salida.Raiz);
+                label12.Text = Convert.ToString(salida.NroIteraciones);
+                label13.Text = Convert.ToString(salida.ErrorRelativo);
+            }
+
+
         }
     }
 }

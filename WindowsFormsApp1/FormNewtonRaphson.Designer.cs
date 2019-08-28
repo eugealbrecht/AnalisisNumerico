@@ -78,16 +78,16 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(431, 168);
+            this.label10.Location = new System.Drawing.Point(431, 92);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(180, 13);
+            this.label10.Size = new System.Drawing.Size(32, 13);
             this.label10.TabIndex = 32;
-            this.label10.Text = "MEJOR SOLUCIÓN ENCONTRADA";
+            this.label10.Text = "RAIZ";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(431, 130);
+            this.label9.Location = new System.Drawing.Point(431, 169);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 13);
             this.label9.TabIndex = 31;
@@ -96,7 +96,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(431, 92);
+            this.label8.Location = new System.Drawing.Point(431, 130);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(145, 13);
             this.label8.TabIndex = 30;

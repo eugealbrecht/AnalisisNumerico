@@ -150,6 +150,7 @@
             this.métodoNewtonRaphsonToolStripMenuItem.Name = "métodoNewtonRaphsonToolStripMenuItem";
             this.métodoNewtonRaphsonToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
             this.métodoNewtonRaphsonToolStripMenuItem.Text = "Método Newton-Raphson";
+            this.métodoNewtonRaphsonToolStripMenuItem.Click += new System.EventHandler(this.métodoNewtonRaphsonToolStripMenuItem_Click);
             // 
             // métodoDeIteraciónDePuntoFijoToolStripMenuItem
             // 

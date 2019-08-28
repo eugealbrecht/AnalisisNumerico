@@ -30,5 +30,12 @@ namespace WindowsFormsApp1
             form.Owner = this;
             form.ShowDialog();
         }
+
+        private void métodoNewtonRaphsonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormNewtonRaphson form = new FormNewtonRaphson();
+            form.Owner = this;
+            form.ShowDialog();
+        }
     }
 }

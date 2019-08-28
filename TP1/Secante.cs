@@ -21,9 +21,7 @@ namespace TP1
             double tolerancia = 0.001;
             double c = 0;
             double xr = 0;
-
-            Resultado resultado = new Resultado();
-
+            
             if (f(x1) == 0)
                 Console.WriteLine("La raiz es: " + x1);
             else
@@ -48,7 +46,7 @@ namespace TP1
 
 
 
-                    } while ((Math.Abs(f(xr)) > tolerancia) && (c < itermax) / (error < tolerancia) /);
+                    } while ((Math.Abs(f(xr)) > tolerancia) && (c < itermax));
                 }
 
                 Console.WriteLine("La raíz es: " + xr + " - Cantidad de iteraciones: " + c);
@@ -57,21 +55,7 @@ namespace TP1
 
         }
 
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Ingrese un numero");
-            int num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese otro numero");
-            int num2 = int.Parse(Console.ReadLine());
-            Resultado res = new Resultado();
-            Secante sec = new Secante();
-            sec.MetodoSecante(num1, num2);
-            Console.ReadKey();
-
-            Console.ReadKey();
-
-        }
-
+        
     }
 
 

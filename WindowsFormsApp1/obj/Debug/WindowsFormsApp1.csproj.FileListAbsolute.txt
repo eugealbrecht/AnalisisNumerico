@@ -21,3 +21,14 @@ C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateR
 C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\AnalisisNumerico\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormBiseccion.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormNewtonRaphson.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormPrincipal.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormReglaFalsa.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormSecante.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\euge_\Desktop\UCSE\Análisis Numérico\TP\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
