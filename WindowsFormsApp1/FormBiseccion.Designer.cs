@@ -231,6 +231,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormBiseccion";
             this.Text = "Biseccion";
+            this.Load += new System.EventHandler(this.FormBiseccion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -51,6 +51,12 @@
     <Compile Include="FormBiseccion.Designer.cs">
       <DependentUpon>FormBiseccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNewtonRaphson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewtonRaphson.Designer.cs">
+      <DependentUpon>FormNewtonRaphson.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,16 +69,28 @@
     <Compile Include="FormReglaFalsa.Designer.cs">
       <DependentUpon>FormReglaFalsa.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSecante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecante.Designer.cs">
+      <DependentUpon>FormSecante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormBiseccion.resx">
       <DependentUpon>FormBiseccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewtonRaphson.resx">
+      <DependentUpon>FormNewtonRaphson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReglaFalsa.resx">
       <DependentUpon>FormReglaFalsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecante.resx">
+      <DependentUpon>FormSecante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

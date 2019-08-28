@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FormBiseccion : Form
+    public partial class FormNewtonRaphson : Form
     {
-        public FormBiseccion()
+        public FormNewtonRaphson()
         {
             InitializeComponent();
             label11.Visible = false;
@@ -33,6 +33,11 @@ namespace WindowsFormsApp1
             textBox3.Visible = true;
         }
 
+        private void FormNewtonRaphson_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             label11.Visible = true;
@@ -51,17 +56,6 @@ namespace WindowsFormsApp1
             textBox1.Visible = false;
             textBox2.Visible = false;
             textBox3.Visible = false;
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormBiseccion_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

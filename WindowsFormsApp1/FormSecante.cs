@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FormBiseccion : Form
+    public partial class FormSecante : Form
     {
-        public FormBiseccion()
+        public FormSecante()
         {
             InitializeComponent();
             label11.Visible = false;
@@ -54,12 +54,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormBiseccion_Load(object sender, EventArgs e)
+        private void FormSecante_Load(object sender, EventArgs e)
         {
 
         }
