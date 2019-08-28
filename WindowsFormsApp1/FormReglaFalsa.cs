@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP1;
 
 namespace WindowsFormsApp1
 {
@@ -54,6 +55,27 @@ namespace WindowsFormsApp1
             textBox1.Visible = false;
             textBox2.Visible = false;
             textBox3.Visible = false;
+
+            if (textBox2.Text != "" && textBox3.Text != "")
+            {
+                double x1 = Convert.ToDouble(textBox2.Text);
+                double x2 = Convert.ToDouble(textBox3.Text);
+                ReglaFalsa reg = new ReglaFalsa();
+                Salida salida = new Salida();
+                salida = reg.MReglaFalsa(x1, x2);
+
+                
+                label11.Text = salida.Raiz.ToString();
+                label12.Text = salida.NroIteraciones.ToString();
+                label13.Text = salida.ErrorRelativo.ToString();
+
+
+            }
+        }
+
+        private void FormReglaFalsa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

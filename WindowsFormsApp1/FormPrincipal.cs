@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP1;
+
 
 namespace WindowsFormsApp1
 {
@@ -34,6 +36,18 @@ namespace WindowsFormsApp1
         private void métodoNewtonRaphsonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormNewtonRaphson form = new FormNewtonRaphson();
+            form.Owner = this;
+            form.ShowDialog();
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void métodoDeLaSecanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSecante form = new FormSecante();
             form.Owner = this;
             form.ShowDialog();
         }

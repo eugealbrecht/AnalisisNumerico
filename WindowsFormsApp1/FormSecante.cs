@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP1;
+
 
 namespace WindowsFormsApp1
 {
@@ -51,6 +53,22 @@ namespace WindowsFormsApp1
             textBox1.Visible = false;
             textBox2.Visible = false;
             textBox3.Visible = false;
+
+            if (textBox2.Text != "" && textBox3.Text != "")
+            {
+                double x1 = Convert.ToDouble(textBox2.Text);
+                double x2 = Convert.ToDouble(textBox3.Text);
+                Secante sec = new Secante();
+                Salida salida = new Salida();
+                salida = sec.MetodoSecante(x1, x2);
+
+
+                label11.Text = salida.Raiz.ToString();
+                label12.Text = salida.NroIteraciones.ToString();
+                label13.Text = salida.ErrorRelativo.ToString();
+
+
+            }
 
         }
 

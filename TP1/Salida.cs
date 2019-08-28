@@ -8,6 +8,10 @@ namespace TP1
 {
     public class Salida
     {
+        public Salida()
+        {
+
+        }
         public double NroIteraciones { get; set; }
         public double ErrorRelativo { get; set; }
         public string MejorSolucion { get; set; }

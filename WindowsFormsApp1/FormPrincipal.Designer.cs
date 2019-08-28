@@ -163,6 +163,7 @@
             this.métodoDeLaSecanteToolStripMenuItem.Name = "métodoDeLaSecanteToolStripMenuItem";
             this.métodoDeLaSecanteToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
             this.métodoDeLaSecanteToolStripMenuItem.Text = "Método de la Secante";
+            this.métodoDeLaSecanteToolStripMenuItem.Click += new System.EventHandler(this.métodoDeLaSecanteToolStripMenuItem_Click);
             // 
             // uNIDAD2ToolStripMenuItem
             // 
@@ -201,6 +202,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormPrincipal";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.contextMenuStrip3.ResumeLayout(false);
             this.contextMenuStrip4.ResumeLayout(false);
             this.menuStrip2.ResumeLayout(false);

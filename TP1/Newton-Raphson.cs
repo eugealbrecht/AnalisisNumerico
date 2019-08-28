@@ -8,6 +8,10 @@ namespace TP1
 {
     public class Newton_Raphson
     {
+        public Newton_Raphson()
+        {
+
+        }
         public static double f(double x)
         {
             return Math.Log(x) + (1 / x) - 3;

@@ -231,6 +231,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormReglaFalsa";
             this.Text = "FormReglaFalsa";
+            this.Load += new System.EventHandler(this.FormReglaFalsa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

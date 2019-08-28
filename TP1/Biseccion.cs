@@ -8,6 +8,10 @@ namespace TP1
 {
     public class Biseccion
     {
+        public Biseccion()
+        {
+
+        }
         public double f(double x)
         {
             /* double e = 2.71828;
@@ -72,4 +76,6 @@ namespace TP1
             return salida;
         }
     }
+
+   
 }

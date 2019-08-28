@@ -8,6 +8,10 @@ namespace TP1
 {
     public class ReglaFalsa
     {
+        public ReglaFalsa()
+        {
+
+        }
         public static double f(double x)
         {
             //double e = 2.71828;
